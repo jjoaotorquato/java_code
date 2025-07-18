@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class calcMethods {
@@ -26,7 +25,7 @@ public class calcMethods {
 
         System.out.print("NUM1: ");
         num1 = scanner.nextDouble();
-        System.out.print("PERATION: ");
+        System.out.print("OPERATION: ");
         operator = scanner.next().charAt(0);
         System.out.print("NUM2: ");
         num2 = scanner.nextDouble();
