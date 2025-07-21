@@ -1,4 +1,3 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -22,11 +21,9 @@ public class diceRoler {
             }
             System.out.println("TOTAL: "+total);
 
-
-
         }else{
             System.out.println("NUMBER OF DICE MUST BE GRATER THAN 0");
         }
     }
-         
+
 }
