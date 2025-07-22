@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class manu {
+public class menu {
     static String[] itens = {"pizza", "hamburger", "soda"};
     static double[] price = {35.0, 15.0, 5.0};
     static int[] request = new int[10];
