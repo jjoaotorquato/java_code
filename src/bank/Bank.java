@@ -1,33 +1,44 @@
 package bank;
 
 public class Bank {
-    private String accountName;
+    private String name;
     private String accountNumber;
     private double balance;
 
-    public Bank(String accountName, String accountNumber,double balance){
-        this.accountName = accountName;
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setAccountNumber(String accountNumber){
         this.accountNumber = accountNumber;
+    }
+
+    public void setBalance(double balance){
         this.balance = balance;
     }
-    public String getAccountName(){
-        return accountName;
+
+    public String getName(String name){
+        return name;
     }
-    public String getAccountNumber(){
+
+    public String getAcocuntNumber(String accountNumber){
         return accountNumber;
     }
-    public double getBalnace(){
+
+    public double getBalance(double balance){
         return balance;
     }
 
-    public void deposit(double amount){
-        if(amount > 0){
-        balance += amount;
-        }
+    public double withdraw(double amount){
+        return balance - amount;
     }
-    public void withdraw(double amount){
-        if(amount > 0 && amount <= balance){
-            balance -= amount;
-        }
+
+    public double deposit(double amount){
+        return balance + amount;
+    }
+
+    @Override
+    public String toString(){
+        return "name: " + name + " account number: "+ accountNumber + " ballance: "+ balance;
     }
 }
