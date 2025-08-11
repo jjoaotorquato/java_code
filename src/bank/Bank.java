@@ -17,28 +17,28 @@ public class Bank {
         this.balance = balance;
     }
 
-    public String getName(String name){
+    public String getName(){
         return name;
     }
 
-    public String getAcocuntNumber(String accountNumber){
+    public String getAcocuntNumber(){
         return accountNumber;
     }
 
-    public double getBalance(double balance){
+    public double getBalance(){
         return balance;
     }
 
     public double withdraw(double amount){
-        return balance - amount;
+        return balance -= amount;
     }
 
     public double deposit(double amount){
-        return balance + amount;
+        return balance += amount;
     }
 
     @Override
     public String toString(){
-        return "name: " + name + " account number: "+ accountNumber + " ballance: "+ balance;
+        return "name: " + name + " account number: "+ accountNumber + " balance: "+ balance;
     }
 }
