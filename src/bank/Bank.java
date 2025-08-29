@@ -9,8 +9,7 @@ public class Bank {
         this.name = name;
     }
 
-    public void setAccountNumber(String accountNumber){
-        this.accountNumber = accountNumber;
+    public void setAccountNumber(String accountNumber){this.accountNumber = accountNumber;
     }
 
     public void setBalance(double balance){
